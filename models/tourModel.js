@@ -15,16 +15,16 @@ const tourSchema = new mongoose.Schema(
     },
     duration: {
       type: Number,
-      required: [true, 'A tour must have a duration'],
+      required: [false, 'A tour must have a duration'],
     },
     slug: String,
     maxGroupSize: {
       type: Number,
-      required: [true, 'A tour must have a max Group size'],
+      required: [false, 'A tour must have a max Group size'],
     },
     difficulty: {
       type: String,
-      required: [true, 'A tour should have a difficulty'],
+      required: [false, 'A tour should have a difficulty'],
       enum: {
         values: ['easy', 'medium', 'difficulty'],
         message: 'A tour has to be easy, medium or difficult',
