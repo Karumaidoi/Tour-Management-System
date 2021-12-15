@@ -59,16 +59,16 @@ block content
                 
                 
                 .overview-box__group
-                    h2.heading-secondary.ma-bt-lg Your tour guides
+                    h2.heading-secondary.ma-bt-lg Suggections
 
                     each guide in tour.guides
                         .overview-box__detail
                             img.overview-box__img(src=`/img/users/${guide.photo}`, alt=`${guide.role}`)
 
                             - if(guide.role === 'Lead-guide')
-                                span.overview-box__label Lead guide
+                                span.overview-box__label Top producer
                             - if(guide.role === 'guide')
-                                span.overview-box__label Tour guide
+                                span.overview-box__label Producers
                             span.overview-box__text= guide.name 
                     
 
@@ -106,7 +106,7 @@ block content
                     p.cta__text= `${tour.duration} days. 1 adventure. Infinite memories. Make it yours today!`
 
                     if user
-                        button.btn.btn--green.span-all-rows#book-tour(data-tour-id=`${tour.id}`) Book tour now!
+                        button.btn.btn--green.span-all-rows#book-tour(data-tour-id=`${tour.id}`) Order now!
                     else 
                         a(href="/login").btn.btn--green.span-all-rows Log In
 
