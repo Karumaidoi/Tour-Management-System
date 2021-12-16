@@ -51,6 +51,22 @@ exports.logIn = async (req, res) => {
   });
 };
 
+exports.addProduct = async (req, res) => {
+  // console.log(req.body);
+  //Send the data
+  res.status(200).render('addproduct', {
+    title: 'Add a product',
+  });
+};
+
+exports.signup = async (req, res) => {
+  // console.log(req.body);
+  //Send the data
+  res.status(200).render('signup', {
+    title: 'Create an account',
+  });
+};
+
 //
 exports.getMyTours = catchAsync(async (req, res, next) => {
   const bookings = await Booking.find({ user: req.user.id });

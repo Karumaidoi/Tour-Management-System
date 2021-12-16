@@ -2,6 +2,7 @@ const express = require('express');
 
 const userController = require('./../controllers/userController');
 const authController = require('./../controllers/authController');
+const tourController = require('./../controllers/tourController');
 
 const route = express.Router();
 
@@ -15,6 +16,8 @@ route.patch('/resetPassword/:token', authController.resetPassword);
 route.use(authController.protect);
 
 route.get('/me', userController.getMe, userController.getUser);
+
+route.post('/addproduct', tourController.createTour);
 
 route.patch('/updatePassword', authController.updatePassword);
 

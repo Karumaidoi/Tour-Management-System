@@ -13,7 +13,7 @@ block content
                             span= tour.name
 
                     .card__details
-                        h4.card__sub-heading= `${tour.difficulty} ${tour.duration}-day tour` 
+                        h4.card__sub-heading= `${tour.difficulty} ${tour.duration}-delivery period` 
                         p.card__text= tour.summary
                         .card__data
                             svg.card__icon
@@ -34,9 +34,9 @@ block content
 
                     .card__footer
                         p
-                            span.card__footer-value= `$${tour.price}`
+                            span.card__footer-value= `Ke$${tour.price}`
                             | 
-                            span.card__footer-text per person
+                            span.card__footer-text per Kg
                         p.card__ratings
                             span.card__footer-value= tour.ratingsAverage 
                             | 
