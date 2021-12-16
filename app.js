@@ -51,7 +51,7 @@ app.use(express.json({ limit: '10kb' }));
 app.use(cookieParser());
 
 //FOR PARSING DATA IN THE BODY ///USING FORMS
-app.use(express.urlencoded());
+app.use(express.urlencoded({ extended: true }));
 
 //Protecting against NOSQL NO INJECTION ATTACK
 app.use(mongoSanitize());
