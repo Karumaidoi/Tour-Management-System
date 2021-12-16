@@ -63,13 +63,21 @@
     "password": "$2a$12$II1F3aBSFDF3Xz7iB4rk/.a2dogwkClMN5gGCWrRlILrG1xtJG7q6"
   },
   {
-    "_id": "5c8a20d32f8fb814b56fa187",
     "name": "Eliana Stout",
     "email": "eliana@example.com",
     "role": "user",
     "active": true,
     "photo": "user-8.jpg",
     "password": "$2a$12$Jb/ILhdDV.ZpnPMu19xfe.NRh5ntE2LzNMNcsty05QWwRbmFFVMKO"
+  },
+  {
+    "_id": "5c8a20d32f8fb814b56fa107",
+    "name": "Alex Stout",
+    "email": "alexa@example.com",
+    "role": "user",
+    "active": true,
+    "photo": "user-8.jpg",
+    "password": "A0076BCA"
   },
   {
     "_id": "5c8a211f2f8fb814b56fa188",
